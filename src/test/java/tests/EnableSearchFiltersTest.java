@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.BlackewellsHomePage;
+import pages.BlackwellsHomePage;
 import pages.BlackwellsSearchResults;
 
 public class EnableSearchFiltersTest extends BaseHelper {
@@ -21,7 +21,7 @@ public class EnableSearchFiltersTest extends BaseHelper {
         String toYear="2010";
         String formatName="Hardback";
 
-        BlackewellsHomePage homePage = new BlackewellsHomePage(driver);
+        BlackwellsHomePage homePage = new BlackwellsHomePage(driver);
         homePage.Search(url, searchTerm);
 
         BlackwellsSearchResults searchResults = new BlackwellsSearchResults(driver);

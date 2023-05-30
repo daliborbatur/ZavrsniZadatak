@@ -7,14 +7,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class BlackewellsHomePage extends BaseHelper {
+public class BlackwellsHomePage extends BaseHelper {
 
 @FindBy(name="keyword")
 WebElement searchField;
 @FindBy(xpath="//input[@type=\"submit\"]")
     WebElement searchButton;
 
-    public BlackewellsHomePage(WebDriver driver)
+    public BlackwellsHomePage(WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver, this);

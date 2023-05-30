@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.BlackewellsHomePage;
+import pages.BlackwellsHomePage;
 import pages.BlackwellsSearchResults;
 
 public class ShoppingBasketTest extends BaseHelper {
@@ -20,7 +20,7 @@ public class ShoppingBasketTest extends BaseHelper {
         String formatName = "Hardback";
         String buttonAdded = "Added to basket";
 
-        BlackewellsHomePage homePage = new BlackewellsHomePage(driver);
+        BlackwellsHomePage homePage = new BlackwellsHomePage(driver);
         homePage.Search(url, searchTerm);
 
         BlackwellsSearchResults searchResults = new BlackwellsSearchResults(driver);

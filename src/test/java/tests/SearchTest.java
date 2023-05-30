@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.BlackewellsHomePage;
+import pages.BlackwellsHomePage;
 
 public class SearchTest extends BaseTest {
 
@@ -14,7 +14,7 @@ public class SearchTest extends BaseTest {
         String url = "https://blackwells.co.uk/bookshop/home";
         String searchTerm = "Vonnegut";
 
-        BlackewellsHomePage homePage = new BlackewellsHomePage(driver);
+        BlackwellsHomePage homePage = new BlackwellsHomePage(driver);
         homePage.Search(url, searchTerm);
 
         wdWait.until(ExpectedConditions.presenceOfElementLocated(By.className("search-result__list")));
